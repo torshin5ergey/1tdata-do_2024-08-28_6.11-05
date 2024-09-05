@@ -1,0 +1,23 @@
+services:
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: mysecretpassword
+      POSTGRES_DB: postgres
+    ports:
+      - "5432:5432"
+    volumes:
+
+      - ./create_table_postgresql.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
+  clickhouse:
+    image: clickhouse/clickhouse-server
+    ports:
+      - "8123:8123"
+      - "9000:9000"
+    volumes:
+    
+      - ./create_table_clickhouse.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
