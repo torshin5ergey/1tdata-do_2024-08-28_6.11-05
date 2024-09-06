@@ -1,0 +1,6 @@
+# PostgreSQL JBDC driver
+postgresql-42.7.4.jar
+
+# Volumes
+postgres_data/
+clickhouse_data/
