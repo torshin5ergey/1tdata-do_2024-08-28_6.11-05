@@ -7,15 +7,15 @@ CREATE TABLE employees
     salary Int32,
 );
 
-INSERT INTO employees (name, age, salary)
+INSERT INTO employees (id, name, age, salary)
 VALUES
-('Alice', 30, 70000),
-('Bob', 25, 50000),
-('Charlie', 35, 100000),
-('David', 40, 120000),
-('Eve', 28, 60000),
-('Frank', 50, 150000),
-('Grace', 33, 80000),
-('Hank', 29, 55000),
-('Ivy', 42, 110000),
-('Jack', 31, 90000);
+(1, 'Alice', 30, 70000),
+(2, 'Bob', 25, 50000),
+(3, 'Charlie', 35, 100000),
+(4, 'David', 40, 120000),
+(5, 'Eve', 28, 60000),
+(6, 'Frank', 50, 150000),
+(7, 'Grace', 33, 80000),
+(8, 'Hank', 29, 55000),
+(9, 'Ivy', 42, 110000),
+(10, 'Jack', 31, 90000);
